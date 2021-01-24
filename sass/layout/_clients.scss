@@ -1,7 +1,11 @@
 .clients-list {
-   display: flex;
-   justify-content: space-between;
-   margin-top: 50px;
+   margin-top: 30px;
+   @media screen and (min-width: 768px) {
+      display: flex;
+   }
+   @media screen and (min-width: 1200px) {
+      margin-top: 50px;
+   }
 }
 
 .clients-link {
