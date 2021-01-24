@@ -1,35 +1,50 @@
 .team {
    background-color: var(--bgc-secondary);
    .title {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
+      @media screen and (min-width: 1200px) {
+         margin-bottom: 50px;
+      }
    }
 }
 
 .team-list {
-   display: flex;
-   flex-wrap: wrap;
-   margin-left: calc(-1 * var(--card-gap));
+   @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: calc(-1 * var(--card-gap));
+      margin-top: calc(-1 * var(--card-gap));
+   }
 }
 .team-list-item {
-   flex-basis: calc(100% / 4 - var(--card-gap));
-   margin-left: var(--card-gap);
+   @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+   }
+   @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - var(--card-gap));
+      margin-left: var(--card-gap);
+      margin-top: var(--card-gap);
+   }
+   @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - var(--card-gap));
+   }
 }
-
-.team-title {
-   font-weight: 500;
+.team-title,
+.team-description {
    font-size: 16px;
    line-height: 1.188;
    text-align: center;
    letter-spacing: 0.03em;
+}
+.team-title {
+   font-weight: 500;
    color: var(--title-color);
    margin-bottom: 10px;
 }
 .team-description {
    font-weight: 400;
-   font-size: 16px;
-   line-height: 1.188;
-   text-align: center;
-   letter-spacing: 0.03em;
    color: var(--text-color);
    margin-bottom: 16px;
 }
@@ -41,5 +56,18 @@
    border-radius: 0px 0px 4px 4px;
 }
 .card-content {
-   padding: 30px 32px;
+   @media screen and (max-width: 479px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   @media screen and (min-width: 480px) {
+      padding: 30px 122px 24px 122px;
+   }
+   @media screen and (min-width: 768px) {
+      padding: 30px 74px 24px 74px;
+   }
+   @media screen and (min-width: 1200px) {
+      padding: 30px 32px;
+   }
 }

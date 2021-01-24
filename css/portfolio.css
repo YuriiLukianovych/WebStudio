@@ -90,7 +90,13 @@ img {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .modal-btn {
@@ -206,12 +212,21 @@ img {
 }
 
 .title {
+  font-size: 28px;
+  line-height: 1.179;
+  text-align: center;
+  letter-spacing: 0.03em;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.166;
+  }
 }
 
 .contact-icons {
