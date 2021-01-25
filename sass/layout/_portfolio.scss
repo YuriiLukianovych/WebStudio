@@ -11,13 +11,17 @@
    line-height: 1.556;
    letter-spacing: 0.03em;
    color: #ffffff;
-   padding: 63px 24px;
+   padding: 0 24px;
    background-color: rgba(33, 150, 243, 0.9);
 
    position: absolute;
    height: 100%;
    width: 100%;
    transform: translateY(100%);
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
    .project-link:hover &,
    .project-link:focus & {
       transform: translateY(0);
@@ -45,9 +49,6 @@
    margin-top: 15px;
    margin-right: 8px;
 }
-// .portfolio-nav-list-item:not(:last-child) {
-//    margin-right: 8px;
-// }
 
 .portfolio-nav-link {
    display: block;
@@ -69,7 +70,9 @@
    }
 }
 // -------- end portfolio navigatuio --------------
-
+.projects-content {
+   padding: 20px 24px;
+}
 .project-title {
    font-weight: 700;
    font-size: 18px;
@@ -122,7 +125,4 @@
 .project-link:hover .overlay,
 .project-link:focus .overlay {
    transform: translateY(0);
-}
-.projects-content {
-   padding: 20px 24px;
 }
