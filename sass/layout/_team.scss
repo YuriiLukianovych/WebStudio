@@ -56,6 +56,7 @@
    border-radius: 0px 0px 4px 4px;
 }
 .card-content {
+   padding: 30px 0px 24px 0px;
    @media screen and (max-width: 479px) {
       display: flex;
       flex-direction: column;

@@ -137,6 +137,7 @@ img {
 }
 
 .followus .social-list {
+  margin: 0 auto;
   width: 206px;
 }
 
@@ -180,10 +181,17 @@ img {
   display: block;
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #000000;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 .logo > span {
@@ -771,6 +779,10 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+.card-content {
+  padding: 30px 0px 24px 0px;
+}
+
 @media screen and (max-width: 479px) {
   .card-content {
     display: flex;
@@ -797,25 +809,58 @@ img {
   }
 }
 
-.clients-list {
-  margin-top: 30px;
+.clients .title {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients .title {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-gap));
+    margin-top: calc(-1 * var(--card-gap));
+  }
+}
+
+.clients-list-item {
+  height: 90px;
+}
+
+@media screen and (max-width: 319px) {
+  .clients-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .clients-list-item {
+    flex-basis: calc(100% / 2 - var(--card-gap));
+    margin-left: var(--card-gap);
+    margin-top: var(--card-gap);
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .clients-list {
-    display: flex;
+  .clients-list-item {
+    flex-basis: calc(100% / 3 - var(--card-gap));
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .clients-list {
-    margin-top: 50px;
+  .clients-list-item {
+    flex-basis: calc(100% / 6 - var(--card-gap));
   }
 }
 
 .clients-link {
-  width: 170px;
-  height: 90px;
+  width: 100%;
+  height: 100%;
   color: #afb1b8;
   display: flex;
   justify-content: center;
@@ -956,7 +1001,13 @@ img {
 }
 
 .adress-list-item:not(:last-child) {
-  margin-bottom: 6px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .adress-list-item:not(:last-child) {
+    margin-bottom: 6px;
+  }
 }
 
 .post-adress,
@@ -987,7 +1038,17 @@ img {
 }
 
 .footer-wrapper {
-  display: flex;
-  justify-content: space-between;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.followus {
+  margin: 60px 0;
 }
 /*# sourceMappingURL=main.css.map */
