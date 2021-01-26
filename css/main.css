@@ -428,6 +428,12 @@ img {
   display: block;
 }
 
+@media screen and (max-width: 480px) {
+  .menu-container {
+    height: 101vh;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
@@ -438,7 +444,7 @@ img {
     left: 0;
     width: 100%;
     z-index: 2;
-    background-color: #ffffff;
+    background-color: tomato;
   }
 }
 
