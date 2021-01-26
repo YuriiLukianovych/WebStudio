@@ -18,7 +18,7 @@
          
          <a class="logo link" href="/" lang="en"><span>Web</span>Studio</a>
          
-         <div class="menu-container">
+         <div class="menu-container"  id="menu-container" data-menu>
             <nav class="site-navigation">
                <ul class="navigation-list list">
                   <li class="navigation-list-item"><a class="navigation-link link transition current" href="index.html">Студия</a>
@@ -40,12 +40,12 @@
             </address>
          </div>
             
-         <!-- <button type="button" class="menu-button" data-menu-button>
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню" aria-expanded="false">
+         <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
+            <svg class="menu-button-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
                <use class="icon-cross" href="./images/svg/sprite.svg#icon-cross"></use>
             </svg>
-         </button> -->
+         </button>
       </div>
    </header>
   <main>
@@ -578,6 +578,5 @@
 
    <script src="./js/menu.js"></script>
    <script src="./js/modal.js"></script>
-   <script src="./js/form.js"></script>
 </body>
 </html>

@@ -1,9 +1,15 @@
 .header {
    .container {
-      height: 80px;
+      height: 60px;
       display: flex;
+      justify-content: space-between;
       align-items: center;
+      @media screen and (min-width: 768px) {
+         height: 80px;
+         justify-content: flex-start;
+      }
    }
+   position: relative;
 }
 .site-navigation {
    display: flex;
@@ -74,11 +80,26 @@
 }
 
 .menu-container {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-grow: 1;
+   &.is-open {
+      display: block;
+   }
+   @media screen and (max-width: 767px) {
+      display: none;
+      position: absolute;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      z-index: 999999;
+      background-color: tomato;
+   }
+
    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 1;
       margin-left: 88px;
    }
    @media screen and (min-width: 1200px) {
@@ -95,3 +116,67 @@
       }
    }
 }
+
+.menu-button {
+   display: inline-flex;
+   padding: 0;
+   margin: 0;
+   border: none;
+   background-color: transparent;
+
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   &:hover,
+   &:focus {
+      color: var(--accent-color);
+   }
+
+   &-icon {
+      fill: currentColor;
+   }
+   .icon-cross {
+      display: none;
+   }
+
+   // @media screen and (min-width: 768px) {
+   //    display: none;
+   // }
+}
+
+// .icon-menu {
+//    display: block;
+// }
+
+.menu-button.is-open .icon-cross {
+   display: block;
+}
+
+.menu-button.is-open .icon-menu {
+   display: none;
+}
+
+// ------------------------------
+// ------------------------------
+
+// @media screen and (max-width: 767px) {
+//    .site-navigation {
+//       margin-bottom: 60px;
+//    }
+
+//    .navigation-list {
+//       flex-direction: column;
+//       text-align: center;
+
+//       .navigation-list-item:not(:last-child) {
+//          padding-bottom: 40px;
+//       }
+//    }
+
+//    .header .adress {
+//       align-items: center;
+//    }
+
+//    .contact-mail {
+//       margin-bottom: 16px;
+//    }
+// }
