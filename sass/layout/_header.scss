@@ -147,9 +147,12 @@
    &.is-open {
       display: flex;
    }
-   @media screen and (max-width: 480px) {
+   @media screen and (max-width: 479px) {
       padding: 48px 20px;
-      height: 101vh;
+      // height: 101vh;
+   }
+   @media screen and (min-width: 480px) {
+      padding: 48px 40px;
    }
    @media screen and (max-width: 767px) {
       display: none;
@@ -164,7 +167,6 @@
    }
 
    @media screen and (min-width: 768px) {
-      padding: 48px 40px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
