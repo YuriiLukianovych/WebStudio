@@ -85,19 +85,19 @@
 
 // ---------------------- tablet + ------------------------
 @media screen and (min-width: 768px) {
-   .navigation-link {
-      .navigation-link,
-      .contact-mail,
-      .contact-phone {
-         font-weight: 500;
-         font-size: 14px;
-         line-height: 1.143;
-         letter-spacing: 0.02em;
-         &:hover,
-         &:focus {
-            color: var(--accent-color);
-         }
+   .navigation-link,
+   .contact-mail,
+   .contact-phone {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.143;
+      letter-spacing: 0.02em;
+      color: #212121;
+      &:hover,
+      &:focus {
+         color: var(--accent-color);
       }
+
       position: relative;
       &::after {
          content: '';
@@ -151,7 +151,7 @@
       padding: 48px 20px;
       // height: 101vh;
    }
-   @media screen and (min-width: 480px) {
+   @media screen and (min-width: 480px) and (max-width: 767) {
       padding: 48px 40px;
    }
    @media screen and (max-width: 767px) {
@@ -172,7 +172,7 @@
       justify-content: space-between;
       align-items: center;
       flex-grow: 1;
-      margin-left: 88px;
+      margin-left: 60px;
    }
    @media screen and (min-width: 1200px) {
       margin-left: 93px;
