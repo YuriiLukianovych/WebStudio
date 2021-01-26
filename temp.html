@@ -1,0 +1,44 @@
+<!-- -------------- как есть сейчас в team ------------------ -->
+<img class="team-image" srcset="
+                                       ./images/team/img-1-450.jpg   450w,
+                                       ./images/team/img-1-900.jpg   900w,
+                                       ./images/team/img-1-1350.jpg 1350w
+                                     " src="./images/team/img-1-450.jpg" sizes="
+                                     (min-width: 1200px) 270px, 
+                                     (min-width: 768px)  354px, 
+                                     (min-width: 480px)  450px
+                                     " alt="на фото Игорь Демьяненко" />
+</div>
+
+
+<!-- ------------  это с портфолио ------------------- -->
+<picture class="team-image">
+   <source srcset="
+                              ./images/team/mobile/img1-1х.webp  1x,
+                              ./images/team/mobile/img1-2х.webp  2x
+                           " media="(min-width: 320px) and (max-width: 767px)" type="image/webp" />
+   <source srcset="
+                              ./images/team/mobile/img1-1х.jpg  1x,
+                              ./images/team/mobile/img1-2х.jpg  2x
+                           " media="(min-width: 320px) and (max-width: 767px)" />
+
+   <source srcset="
+                              ./images/team/mobile/img1-tablet-1х.webp  1x,
+                              ./images/team/mobile/img1-tablet-2х.webp  2x
+                           " media="(min-width: 768px) and (max-width: 1199px)" type="image/webp" />
+   <source srcset="
+                              ./images/team/mobile/img1-tablet-1х.jpg  1x,
+                              ./images/team/mobile/img1-tablet-2х.jpg  2x
+                           " media="(min-width: 768px) and (max-width: 1199px)" />
+
+   <source srcset="
+                              ./images/team/mobile/img1-desk-1х.webp  1x,
+                              ./images/team/mobile/img1-desk-2х.webp  2x
+                           " media="(min-width: 1200px)" type="image/webp" />
+   <source srcset="
+                              ./images/team/mobile/img1-desk-1х.jpg  1x,
+                              ./images/team/mobile/img1-desk-2х.jpg  2x
+                           " media="(min-width: 1200px)" />
+
+   <img src="./images/team/mobile/img1-1х.jpg" alt="на фото Игорь Демьяненко"" />
+</picture>
