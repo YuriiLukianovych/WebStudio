@@ -40,7 +40,7 @@
             </address>
          </div>
             
-         <button type="button" class="menu-button" aria-expanded="false" data-menu-button>
+         <button type="button" class="menu-button" aria-controls="menu-container" aria-expanded="false" data-menu-button>
             <svg class="menu-button-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
                <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu"></use>
                <use class="icon-cross" href="./images/svg/sprite.svg#icon-cross"></use>
@@ -522,16 +522,15 @@
    </footer>
 
    <!-- ---------------------------------- modal window -------------------------------- -->
-<!-- 
-   <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
          <button class="close-btn" type="button" data-modal-close>
             <svg class="icon-close">
                <use href="./images/svg/sprite.svg#close"></use>
             </svg>
-         </button> -->
+         </button>
          <!-- -------------- FORM ------------------ -->
-         <!-- <form action="#" class="modal-form">
+         <form action="#" class="modal-form">
             <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>   
             <label class="form-field">
                Имя
@@ -567,10 +566,10 @@
             <input id="user-policy" type="checkbox" name="user-policy" value="accept-policy" class="form-policy visually-hidden">
             <label for="user-policy" class="form-policy-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
             <button type="submit" class="modal-btn modal-btn--center">Отправить</button>
-         </form> -->
+         </form>
          <!-- ---------- END FORM ---------- -->
-      <!-- </div>
-   </div> -->
+      </div>
+   </div>
    <!-- ---------------------------------- end modal window -------------------------------- -->
 
 
