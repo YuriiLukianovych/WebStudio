@@ -489,14 +489,9 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767) {
-  .menu-container {
-    padding: 48px 40px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .menu-container {
+    padding: 48px 40px;
     display: none;
     position: absolute;
     top: 0;

@@ -151,10 +151,9 @@
       padding: 48px 20px;
       // height: 101vh;
    }
-   @media screen and (min-width: 480px) and (max-width: 767) {
-      padding: 48px 40px;
-   }
+
    @media screen and (max-width: 767px) {
+      padding: 48px 40px;
       display: none;
       position: absolute;
       top: 0;
