@@ -19,6 +19,9 @@
    @media screen and (min-width: 768px) {
       display: flex;
    }
+   @media screen and (max-width: 767px) {
+      margin-bottom: 32px;
+   }
 }
 
 .navigation-list-item:not(:last-child) {
@@ -30,11 +33,30 @@
    }
 }
 // ---------------------------- only mobile ----------------------
+@media screen and (max-width: 479px) {
+   .navigation-link {
+      font-size: 30px;
+      line-height: 1.175;
+   }
+   .contact-phone {
+      font-size: 24px;
+   }
+}
+@media screen and (min-width: 480px) {
+   .navigation-link {
+      font-size: 40px;
+      line-height: 1.175;
+   }
+   .contact-phone {
+      font-size: 34px;
+   }
+}
+
 @media screen and (max-width: 767px) {
    .navigation-link {
       font-weight: 500;
-      font-size: 40px;
-      line-height: 47px;
+      // font-size: 40px;
+      // line-height: 1.175;
       letter-spacing: 0.02em;
       color: #212121;
       &:hover {
@@ -59,7 +81,6 @@
          .contact-phone {
             margin-bottom: 32px;
             font-weight: 500;
-            font-size: 34px;
             line-height: 1.176px;
             /* identical to box height */
             color: var(--accent-color);
