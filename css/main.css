@@ -327,6 +327,12 @@ img {
   margin-bottom: 20px;
 }
 
+.header .container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
 .site-navigation {
   display: flex;
   align-items: center;
@@ -402,6 +408,7 @@ img {
 }
 
 .header .adress {
+  margin-left: auto;
   display: flex;
 }
 

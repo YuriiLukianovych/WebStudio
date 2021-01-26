@@ -1,3 +1,10 @@
+.header {
+   .container {
+      height: 80px;
+      display: flex;
+      align-items: center;
+   }
+}
 .site-navigation {
    display: flex;
    align-items: center;
@@ -66,6 +73,7 @@
 }
 .adress {
    .header & {
+      margin-left: auto;
       display: flex;
    }
 }
