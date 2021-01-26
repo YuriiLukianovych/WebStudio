@@ -340,7 +340,6 @@ img {
 
 .navigation-list {
   display: flex;
-  margin-left: 93px;
 }
 
 .navigation-list-item:not(:last-child) {
@@ -389,8 +388,10 @@ img {
   pointer-events: auto;
 }
 
-.contact-mail {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .contact-mail {
+    margin-right: 30px;
+  }
 }
 
 .contact-mail,
@@ -407,9 +408,35 @@ img {
   fill: var(--accent-color);
 }
 
-.header .adress {
-  margin-left: auto;
+.menu-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    margin-left: 93px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .menu-container .adress a:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container .adress {
+    display: flex;
+  }
 }
 
 .backdrop {

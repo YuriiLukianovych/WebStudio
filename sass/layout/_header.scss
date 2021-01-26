@@ -11,7 +11,6 @@
 }
 .navigation-list {
    display: flex;
-   margin-left: 93px;
 }
 
 .navigation-list-item:not(:last-child) {
@@ -53,7 +52,9 @@
 }
 
 .contact-mail {
-   margin-right: 30px;
+   @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+   }
 }
 
 .contact-mail,
@@ -71,9 +72,26 @@
       fill: var(--accent-color);
    }
 }
-.adress {
-   .header & {
-      margin-left: auto;
-      display: flex;
+
+.menu-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-grow: 1;
+   @media screen and (min-width: 768px) {
+      margin-left: 88px;
+   }
+   @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+   }
+   .adress {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+         a:not(:last-child) {
+            margin-bottom: 10px;
+         }
+      }
+      @media screen and (min-width: 1200px) {
+         display: flex;
+      }
    }
 }
